@@ -1,0 +1,8 @@
+java src\jen\jen.java
+java -cp src jen.jen
+
+
+cd $WORKSPACE
+mkdir -p bin
+javac -d bin $(find src -name "*.java")
+java -cp bin com.pcm.Main
